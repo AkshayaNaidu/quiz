@@ -310,10 +310,7 @@ INSERT INTO `rank` (`email`, `score`, `time`) VALUES
 
 CREATE TABLE IF NOT EXISTS `user` (
   `name` varchar(50) NOT NULL,
-  `gender` varchar(5) NOT NULL,
-  `college` varchar(100) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `mob` bigint(20) NOT NULL,
   `password` varchar(50) NOT NULL,
   PRIMARY KEY (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -322,10 +319,10 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`name`, `gender`, `college`, `email`, `mob`, `password`) VALUES
-('Ali', 'M', 'iub', 'ali@gmail.com', 12345678, 'e10adc3949ba59abbe56e057f20f883e'),
-('Tayyab', 'M', 'iub', 'tayyabali7852@gmail.com', 1234567, 'e10adc3949ba59abbe56e057f20f883e'),
-('User', 'M', 'cimt', 'user@user.com', 11, 'e10adc3949ba59abbe56e057f20f883e');
+INSERT INTO `user` (`name`,`email`,`password`) VALUES
+('Ali','ali@gmail.com','e10adc3949ba59abbe56e057f20f883e'),
+('Tayyab','tayyabali7852@gmail.com', 'e10adc3949ba59abbe56e057f20f883e'),
+('User', 'user@user.com', 'e10adc3949ba59abbe56e057f20f883e');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
